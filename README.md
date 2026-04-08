@@ -166,3 +166,21 @@ The xApp expects event JSON like:
 ## Recommended next step
 
 Use this repo first exactly as-is. Once stable, connect your **srsRAN/Open5GS experiment** by writing a small converter that emits the same event schema to `ric:events`.
+
+## References
+
+This implementation is inspired by concepts and methodologies presented in the following works:
+
+1. **Signaling Storm Detection in IIoT Network based on the Open RAN Architecture**  
+   – Proposes an O-RAN xApp that monitors control-plane signaling (e.g., RACH, registration messages) and builds KPI-based statistical profiles (mean, variance) to detect abnormal UE behavior early in the access procedure. :contentReference[oaicite:0]{index=0}  
+   – https://ieeexplore.ieee.org/document/10226043
+
+2. **An Open-RAN Testbed for Detecting and Mitigating Radio-Access Anomalies**  
+   – Demonstrates a practical O-RAN testbed where anomaly detection algorithms are deployed as xApps to identify and mitigate radio access anomalies in real-time environments. :contentReference[oaicite:1]{index=1}  
+   – https://ieeexplore.ieee.org/document/11020585
+
+These works guided the design of the KPI-based anomaly detection pipeline, including:
+- TA-based grouping of events
+- Statistical profiling (μ, σ per TA/time bucket)
+- Threshold-based anomaly scoring
+- Policy-driven mitigation (e.g., reject / rate limit)
