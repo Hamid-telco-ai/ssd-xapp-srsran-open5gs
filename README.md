@@ -163,6 +163,6 @@ The xApp expects event JSON like:
 }
 ```
 
-## Recommended next step in your lab
+## Recommended next step
 
 Use this repo first exactly as-is. Once stable, connect your **srsRAN/Open5GS experiment** by writing a small converter that emits the same event schema to `ric:events`.
