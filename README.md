@@ -41,6 +41,7 @@ scripts/
 docker-compose.yml
 requirements.txt
 ```
+<img width="448" height="178" alt="image" src="https://github.com/user-attachments/assets/a63b32dc-87c4-4369-b230-d0b0b6dce1c7" />
 
 ## Quick start
 
