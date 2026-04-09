@@ -2,7 +2,7 @@
 
 <img width="448" height="178" alt="image" src="https://github.com/user-attachments/assets/a63b32dc-87c4-4369-b230-d0b0b6dce1c7" />
 
-This project is a **software-only Signaling Storm Detection xApp (SSD-xApp)** based on the uploaded papers, adapted to a **zero-license-cost** lab stack:
+This project is a **software-only Signaling Storm Detection xApp (SSD-xApp)** adapted to a **zero-license-cost** lab stack:
 
 - **srsRAN**
 - **Open5GS**
