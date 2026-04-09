@@ -16,15 +16,15 @@ It does **not** require a real E2 interface to get started. Instead, it uses a m
 
 ## What this project does
 
-- builds a KPI profile per **TA** and **time bucket**
-- computes anomaly scores
-- raises alarms
-- applies a policy ladder: `alert -> rate_limit -> reject`
-- supports:
-  - synthetic traffic generation
+- Builds a KPI profile per **TA** and **time bucket**
+- Computes anomaly scores
+- Raises alarms
+- Applies a policy ladder: `alert -> rate_limit -> reject`
+- Supports:
+  - Synthetic traffic generation
   - CSV replay
-  - mocked live feed via Redis pub/sub
-- includes an adapter contract so you can later replace the mocked RIC with:
+  - Mocked live feed via Redis pub/sub
+- Includes an adapter contract so you can later replace the mocked RIC with:
   - srsRAN instrumentation
   - a custom gNB-side parser
   - or a true E2/RIC feed
