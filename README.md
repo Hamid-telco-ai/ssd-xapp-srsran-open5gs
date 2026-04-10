@@ -188,6 +188,7 @@ To integrate with a real software lab (srsRAN + Open5GS), replace the mocked eve
   "request_type": "connection_establish",
   "result": "observed"
 }
+...
 
 ## Recommended next step
 
