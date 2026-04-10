@@ -172,18 +172,22 @@ Use this repo first exactly as-is. Once stable, connect your **srsRAN/Open5GS ex
 
 ## References
 
-This implementation is inspired by concepts and methodologies presented in the following works:
+1. **O-RAN.WG1.Use-Cases-Detailed-Specification-R003-v12.00**  
+   – Defines the O-RAN architecture and key use cases, including Signaling Storm Detection and Mitigation using Near-RT RIC xApps. It specifies required data (e.g., connection establishment events, UE identifiers, Timing Advance) and closed-loop control via E2 interfaces.  
+   – https://www.o-ran.org
 
-1. **Signaling Storm Detection in IIoT Network based on the Open RAN Architecture**  
-   – Proposes an O-RAN xApp that monitors control-plane signaling (e.g., RACH, registration messages) and builds KPI-based statistical profiles (mean, variance) to detect abnormal UE behavior early in the access procedure. :contentReference[oaicite:0]{index=0}  
+2. **Signaling Storm Detection in IIoT Network based on the Open RAN Architecture**  
+   – Proposes an O-RAN xApp that monitors control-plane signaling (e.g., RACH, registration messages) and builds KPI-based statistical profiles (mean, variance) to detect abnormal UE behavior early in the access procedure.  
    – https://ieeexplore.ieee.org/document/10226043
 
-2. **An Open-RAN Testbed for Detecting and Mitigating Radio-Access Anomalies**  
-   – Demonstrates a practical O-RAN testbed where anomaly detection algorithms are deployed as xApps to identify and mitigate radio access anomalies in real-time environments. :contentReference[oaicite:1]{index=1}  
+3. **An Open-RAN Testbed for Detecting and Mitigating Radio-Access Anomalies**  
+   – Demonstrates a practical O-RAN testbed where anomaly detection algorithms are deployed as xApps to identify and mitigate radio access anomalies in real-time environments.  
    – https://ieeexplore.ieee.org/document/11020585
 
 These works guided the design of the KPI-based anomaly detection pipeline, including:
-- TA-based grouping of events
-- Statistical profiling (μ, σ per TA/time bucket)
-- Threshold-based anomaly scoring
-- Policy-driven mitigation (e.g., reject / rate limit)
+
+- TA-based grouping of events  
+- Statistical profiling (μ, σ per TA/time bucket)  
+- Threshold-based anomaly scoring  
+- Policy-driven mitigation (e.g., reject / rate limit)  
+- Closed-loop detection and control aligned with O-RAN Near-RT RIC  
