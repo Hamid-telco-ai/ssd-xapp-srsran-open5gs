@@ -8,9 +8,9 @@
 Signaling storms and RAN access anomalies can degrade network performance and lead to service outages. 
 
 This project demonstrates how O-RAN Near-RT RIC xApps can:
-- detect abnormal UE behavior early in the access procedure
-- apply real-time mitigation policies
-- enable closed-loop, intelligent network control
+- Detect abnormal UE behavior early in the access procedure
+- Apply real-time mitigation policies
+- Enable closed-loop, intelligent network control
 
 The implementation provides a fully reproducible, **software-only Signaling Storm Detection xApp (SSD-xApp)** adapted to a **zero-license-cost** lab stack to experiment with these concepts without requiring a full O-RAN deployment:
 
