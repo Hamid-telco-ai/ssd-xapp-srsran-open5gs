@@ -1,6 +1,8 @@
 # SSD-xApp for srsRAN + Open5GS + Mocked RIC Adapter
 
 <img width="448" height="178" alt="image" src="https://github.com/user-attachments/assets/a63b32dc-87c4-4369-b230-d0b0b6dce1c7" />
+<img width="1000" height="710" alt="image" src="https://github.com/user-attachments/assets/01abaaa1-ea4c-4cb9-98e2-ecd20c1deab4" />
+
 
 This project is a **software-only Signaling Storm Detection xApp (SSD-xApp)** adapted to a **zero-license-cost** lab stack:
 
