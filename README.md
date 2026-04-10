@@ -205,11 +205,3 @@ Use this repo first exactly as-is. Once stable, connect your **srsRAN/Open5GS ex
 3. **An Open-RAN Testbed for Detecting and Mitigating Radio-Access Anomalies**  
    – Demonstrates a practical O-RAN testbed where anomaly detection algorithms are deployed as xApps to identify and mitigate radio access anomalies in real-time environments.  
    – https://ieeexplore.ieee.org/document/11020585
-
-These works guided the design of the KPI-based anomaly detection pipeline, including:
-
-- TA-based grouping of events  
-- Statistical profiling (μ, σ per TA/time bucket)  
-- Threshold-based anomaly scoring  
-- Policy-driven mitigation (e.g., reject / rate limit)  
-- Closed-loop detection and control aligned with O-RAN Near-RT RIC  
