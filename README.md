@@ -3,8 +3,16 @@
 <img width="448" height="178" alt="image" src="https://github.com/user-attachments/assets/a63b32dc-87c4-4369-b230-d0b0b6dce1c7" />
 <img width="1000" height="710" alt="image" src="https://github.com/user-attachments/assets/01abaaa1-ea4c-4cb9-98e2-ecd20c1deab4" />
 
+## Why this project matters
 
-This project is a **software-only Signaling Storm Detection xApp (SSD-xApp)** adapted to a **zero-license-cost** lab stack:
+Signaling storms and RAN access anomalies can degrade network performance and lead to service outages. 
+
+This project demonstrates how O-RAN Near-RT RIC xApps can:
+- detect abnormal UE behavior early in the access procedure
+- apply real-time mitigation policies
+- enable closed-loop, intelligent network control
+
+The implementation provides a fully reproducible, **software-only Signaling Storm Detection xApp (SSD-xApp)** adapted to a **zero-license-cost** lab stack to experiment with these concepts without requiring a full O-RAN deployment:
 
 - **srsRAN**
 - **Open5GS**
@@ -143,6 +151,20 @@ You can watch them with:
 ```bash
 python scripts/policy_listener.py
 ```
+
+## Example Results
+
+Running the inference pipeline on mixed traffic produces:
+
+- Detection of abnormal TA regions
+- Raised alarms with anomaly scores
+- Automatic policy actions (e.g., reject, rate limit)
+
+Example:
+- Observed requests: 14
+- Baseline (μ): 2
+- σ: 0.5
+- Anomaly score: > 20 → policy: reject
 
 ## How this maps to srsRAN + Open5GS
 
