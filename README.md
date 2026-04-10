@@ -188,8 +188,6 @@ To integrate with a real software lab (srsRAN + Open5GS), replace the mocked eve
   "request_type": "connection_establish",
   "result": "observed"
 }
-...
-
 ## Recommended next step
 
 Use this repo first exactly as-is. Once stable, connect your **srsRAN/Open5GS experiment** by writing a small converter that emits the same event schema to `ric:events`.
