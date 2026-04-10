@@ -166,15 +166,17 @@ Example:
 - σ: 0.5
 - Anomaly score: > 20 → policy: reject
 
-## How this maps to srsRAN + Open5GS
+## Integration with srsRAN + Open5GS
 
-This repo gives you the **xApp core** and a **mocked RIC path**. To integrate with your software lab later, replace the mocked event producer with one of these:
+This project provides the core xApp logic with a mocked Near-RT RIC interface.
 
-1. a parser that tails and converts gNB / core logs into `RAR-like` events with `TA`
-2. a custom hook in your lab that publishes event JSON to Redis topic `ric:events`
-3. a future adapter that speaks to a real RIC/E2 source
+To integrate with a real software lab (srsRAN + Open5GS), replace the mocked event source with:
 
-The xApp expects event JSON like:
+- a parser that converts gNB / core logs into RAR-like events with Timing Advance (TA)
+- a custom publisher that streams event JSON to the Redis topic `ric:events`
+- a future adapter connected to a real O-RAN E2 / RIC interface
+
+### Expected Event Format
 
 ```json
 {
@@ -186,7 +188,6 @@ The xApp expects event JSON like:
   "request_type": "connection_establish",
   "result": "observed"
 }
-```
 
 ## Recommended next step
 
