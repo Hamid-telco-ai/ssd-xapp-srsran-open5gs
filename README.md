@@ -19,8 +19,6 @@ The implementation provides a fully reproducible, **software-only Signaling Stor
 - **Mocked Near-RT RIC adapter**
 - **FastAPI**
 - **PostgreSQL**
-- **Redis**
-- **Prometheus/Grafana-ready metrics endpoint**
 
 It does **not** require a real E2 interface to get started. Instead, it uses a mocked adapter that mimics a Near-RT RIC event feed and policy callback path.
 
